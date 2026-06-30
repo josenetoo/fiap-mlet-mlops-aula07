@@ -144,9 +144,7 @@ flowchart LR
     CV --> BEST["🏅 Melhor combinação"]
     BEST --> CHAL["🏋️ Challenger final"]
 ```
-
-> 🗣️ **Como explicar (30s)**: "Em vez de chutar '100 árvores', dou um **cardápio** de opções pro AutoML. Ele sorteia algumas combinações, testa cada uma com validação cruzada e devolve a **campeã**. O botão que eu controlo é o `n_iter`: mais combinações = busca melhor, mais compute."
-
+ 
 **Testar a busca** (`scripts/run_automl.py`):
 
 ```python
@@ -273,8 +271,6 @@ flowchart TD
     C -->|"não"| KEEP["🔒 Mantém champion"]
     C -->|"sim"| DEP["🚀 Promove challenger"]
 ```
-
-> 🗣️ **Como explicar (30s)**: "Uma linha de montagem com **4 portões**: preciso retreinar? → treino → ganhou com margem? → promovo. Cada portão pode encerrar o fluxo — é o que evita trocar o modelo por capricho."
 
 **Criar `src/retrain/pipeline.py`:**
 
