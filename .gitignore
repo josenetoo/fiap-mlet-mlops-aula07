@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.py[cod]
+.Python
+venv/
+.venv/
+
+# MLflow
+mlruns/
+
+# Models
+models/*.pkl
+!models/.gitkeep
+
+# Data
+data/*.csv
+!data/.gitkeep
+
+# Airflow
+airflow.db
+logs/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store

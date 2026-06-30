@@ -1,0 +1,7 @@
+{
+  "drift_detected": true,
+  "drift_score": 0.27,
+  "days_since_last_train": 12,
+  "current_accuracy": 0.88,
+  "new_samples": 1200
+}
