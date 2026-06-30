@@ -45,9 +45,6 @@ flowchart LR
     AR -.->|"se novo degradar"| RB["⏪ Rollback"]
     RB -.-> CH
 ```
-
-> 🗣️ **Como explicar (30s)**: "Dois lutadores. O **champion** já está em produção; o **challenger** é o novo. Eles brigam numa comparação, e o challenger só assume se ganhar **com folga** (margem de 2%). Quando promovo, **guardo o antigo no arquivo** — se o novo der problema, faço **rollback** em segundos. É blue/green deploy com modelo no lugar de app."
-
 ---
 
 ## 🛠️ Parte 2: Implementar o Pipeline
